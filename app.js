@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static("public"))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/index1.html")
+    res.sendFile(__dirname + "/index.html")
 })
 
 app.post("/", (req, res) => {
@@ -19,12 +19,12 @@ app.post("/", (req, res) => {
 
     https.get(url, (response) => {
         let rawData = "";
-    
+
         // Collect data chunks
         response.on("data", (chunk) => {
             rawData += chunk;
         });
-    
+
         response.on("end", () => {
             const jokeData = JSON.parse(rawData);
             if (jokeData.type === "single") {
@@ -39,7 +39,7 @@ app.post("/", (req, res) => {
     })
 })
 
-app.post("/again", (req, res)=>{
+app.post("/again", (req, res) => {
     res.redirect("/")
 })
 
