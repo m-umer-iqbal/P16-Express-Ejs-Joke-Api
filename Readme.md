@@ -1,4 +1,4 @@
-# Joke Generator 🎭
+# Joke Api Project 🎭
 
 A fun Express.js web application that serves random jokes based on catagory! Built while learning about APIs, Express, and EJS templating.
 
