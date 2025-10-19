@@ -44,5 +44,5 @@ app.post("/again", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`https://localhost:${port}`)
+    console.log(`http://localhost:${port}`)
 })
