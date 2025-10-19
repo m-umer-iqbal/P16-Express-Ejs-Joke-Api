@@ -13,10 +13,11 @@ A fun Express.js web application that serves random jokes based on catagory! Bui
 - **Backend**: Express.js
 - **Frontend**: EJS templating
 - **API**: External joke APIs
-- **Styling**: CSS
+- **Styling**: Bootstrap
 
 ## Quick Start
 
 ```bash
 npm install
 node app.js
+```
